@@ -1,4 +1,4 @@
-import {Persoon} from './Persoon';
+import { Persoon } from './Persoon';
 let umut: Persoon = new Persoon('Umut', 18, 'M');
 let demirel: Persoon = new Persoon('Demirel', 19, 'M');
 let laurens: Persoon = new Persoon('Laurens', 19, 'M');

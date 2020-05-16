@@ -22,7 +22,7 @@ let student: [string, number, boolean];
 // initialiseer een tuple
 student = ['Jurson', 17, true];
 
-enum Cijfers {Vak1 = 7, Vak2 = 8, Vak3 = 9};
+enum Cijfers { Vak1 = 7, Vak2 = 8, Vak3 = 9 };
 for (let vak in Cijfers) {
     console.log(Cijfers[vak]);
 }
