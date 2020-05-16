@@ -21,10 +21,31 @@ export class Persoon {
         this.geslacht = geslacht;
     }
 
+    public getNaam(): string {
+        return this.naam;
+    }
+    public setNaam(naam: string): void {
+        this.naam = naam;
+    }
+
     public getLeeftijd(): number {
         return this.leeftijd;
     }
     public setLeeftijd(leeftijd: number): void {
         this.leeftijd = leeftijd;
+    }
+
+    public getIsStudent(): boolean {
+        return this.isStudent;
+    }
+    public setIsStudent(isStudent: boolean): void {
+        this.isStudent = isStudent;
+    }
+
+    public getGemiddeldCijfer(): number {
+        return this.gemiddeldCijfer;
+    }
+    public setGemiddeldCijfer(gemiddeldCijfer: number): void {
+        this.gemiddeldCijfer = gemiddeldCijfer;
     }
 }
