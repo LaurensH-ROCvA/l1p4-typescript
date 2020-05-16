@@ -13,4 +13,11 @@ export class Persoon {
         console.log('Nieuw Persoon-object aangemaakt.');
         console.log('De property naam is ' + this.naam);
     }
+    
+    public getGeslacht(): string {
+        return this.geslacht;
+    }
+    public setGeslacht(geslacht: string): void {
+        this.geslacht = geslacht;
+    }
 }
