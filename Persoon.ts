@@ -20,4 +20,11 @@ export class Persoon {
     public setGeslacht(geslacht: string): void {
         this.geslacht = geslacht;
     }
+
+    public getLeeftijd(): number {
+        return this.leeftijd;
+    }
+    public setLeeftijd(leeftijd: number): void {
+        this.leeftijd = leeftijd;
+    }
 }
