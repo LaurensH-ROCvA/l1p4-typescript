@@ -48,4 +48,12 @@ export class Persoon {
     public setGemiddeldCijfer(gemiddeldCijfer: number): void {
         this.gemiddeldCijfer = gemiddeldCijfer;
     }
+
+    public getGegevens(): string {
+        let gegevens: string =
+            "De gegevens van " + this.naam + " zijn: \n" +
+            "Leeftijd: " + this.leeftijd + "\n" +
+            "Geslacht: " + this.geslacht + "\n";
+        return gegevens;
+    }
 }

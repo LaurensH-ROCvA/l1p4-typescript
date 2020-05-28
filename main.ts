@@ -9,3 +9,6 @@ console.log('De leeftijd van Demirel is: ' + demirel.getLeeftijd());
 
 thamara.setLeeftijd(19);
 console.log('De leeftijd van Thamara is: ' + thamara.getLeeftijd());
+
+console.log(thamara.getGegevens());
+console.log(demirel.getGegevens());
