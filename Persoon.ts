@@ -56,4 +56,10 @@ export class Persoon {
             "Geslacht: " + this.geslacht + "\n";
         return gegevens;
     }
+
+    public toString(): string {
+        return ("De gegevens van " + this.naam + " zijn: \n" +
+            "Leeftijd: " + this.leeftijd + "\n" +
+            "Geslacht: " + this.geslacht + "\n");
+    }
 }
