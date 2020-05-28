@@ -12,3 +12,16 @@ console.log('De leeftijd van Thamara is: ' + thamara.getLeeftijd());
 
 console.log(thamara.getGegevens());
 console.log(demirel.getGegevens());
+
+thamara.setIsStudent(true);
+thamara.setGemiddeldCijfer(8);
+umut.setIsStudent(true);
+umut.setGemiddeldCijfer(8);
+
+let persoonsgegevens: string[] = [];
+persoonsgegevens.push(JSON.stringify(thamara.gegevensOpslaan()));
+persoonsgegevens.push(JSON.stringify(umut.gegevensOpslaan()));
+
+persoonsgegevens.forEach(function (gegevens) {
+    console.log('\n' + gegevens);
+});
