@@ -1,4 +1,5 @@
 import { Persoon } from './Persoon';
+import { User } from './User';
 let umut: Persoon = new Persoon('Umut', 18, 'M');
 let demirel: Persoon = new Persoon('Demirel', 19, 'M');
 let laurens: Persoon = new Persoon('Laurens', 19, 'M');
@@ -25,3 +26,9 @@ persoonsgegevens.push(JSON.stringify(umut.gegevensOpslaan()));
 persoonsgegevens.forEach(function (gegevens) {
     console.log('\n' + gegevens);
 });
+
+let shireen: User = new User('Shireen', 22, 'V', 'shireen@gmail.com', 'Uh65Tg', 'klant');
+console.log(shireen.toString());
+
+let sam: User = new User('Sam', 18, 'M', 'sam@gmail.com', 'Ujstdk', 'klant');
+console.log(sam.toString());
