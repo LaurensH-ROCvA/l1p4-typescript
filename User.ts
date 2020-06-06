@@ -40,4 +40,8 @@ export class User extends Persoon {
             'Wachtwoord: ' + this.wachtwoord + '\n' +
             'Rol: ' + this.rol + '\n');
     }
+
+    public getNaam(): string {
+        return (this.geslacht === 'M' ? 'Geachte heer ' : 'Geachte mevrouw ') + this.naam;
+    }
 }
