@@ -64,7 +64,13 @@ export class Persoon {
     }
 
     public gegevensOpslaan(): object {
-        let persoonsgegevens: object = { "Naam": this.naam, "Leeftijd": this.leeftijd, "Geslacht": this.geslacht, "IsStudent": this.isStudent, "GemiddeldCijfer": this.gemiddeldCijfer };
+        let persoonsgegevens: object = {
+            "Naam": this.naam,
+            "Leeftijd": this.leeftijd,
+            "Geslacht": this.geslacht,
+            "IsStudent": this.isStudent,
+            "GemiddeldCijfer": this.gemiddeldCijfer
+        };
         return persoonsgegevens;
     }
 }
