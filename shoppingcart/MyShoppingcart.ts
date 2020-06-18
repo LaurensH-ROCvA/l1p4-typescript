@@ -10,4 +10,11 @@ export class MyShoppingcart extends Shoppingcart {
             );
         });
     }
+    public getTotaal(): number {
+        let totaal = 0;
+        this.itemList.forEach(function (item) {
+            totaal += item.getAantal() * item.getPrijs();
+        });
+        return totaal;
+    }
 }

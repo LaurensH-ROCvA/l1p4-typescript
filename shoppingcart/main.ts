@@ -6,3 +6,4 @@ let myShoppingcart: MyShoppingcart = new MyShoppingcart();
 myShoppingcart.addToCart(item1);
 myShoppingcart.addToCart(item2);
 myShoppingcart.printCart();
+console.log('Totaalbedrag is: ' + myShoppingcart.getTotaal());
