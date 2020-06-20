@@ -22,6 +22,12 @@ export class Item {
     public getPrijs(): number {
         return this.prijs;
     }
+    public setPrijs(prijs: number): void {
+        if (prijs < 1 || prijs > 10) {
+            throw new Error('De prijs moet tussen de 1 en 10 euro liggen');
+        }
+        this.prijs = prijs;
+    }
     public getAantal(): number {
         return this.aantal;
     }
